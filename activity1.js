@@ -1,9 +1,15 @@
+/*
 function myAnswer(string) {
     if (string.includes("minahal") || string.includes("nasaktan") || string.includes("nagmahal") ||string.includes("Minahal") || string.includes("Nagmahal") || string.includes("Nasaktan")) {
         return "present";
     } else {
     return "absent";
     }
+}
+*/
+
+let myAnswer = string => {
+    return string.includes("minahal") || string.includes("nasaktan") || string.includes("nagmahal") ||string.includes("Minahal") || string.includes("Nagmahal") || string.includes("Nasaktan") ? "present" : "absent";
 }
 console.log(myAnswer("Minahal kita Elisa"));
 console.log(myAnswer("Nasaktan kita Elisa"));
